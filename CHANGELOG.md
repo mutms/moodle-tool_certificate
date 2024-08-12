@@ -1,5 +1,9 @@
 # Changelog
 
+## Unreleased
+### Fixed
+- Failing behat tests because of incorrect table headers
+
 ## 4.4.1 - 2024-06-11
 ### Fixed
 - fixed implicit nullable parameter declaration deprecated in PHP 8.4

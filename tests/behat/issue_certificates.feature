@@ -63,16 +63,16 @@ Feature: Being able to manually issue a certificate to a user
     And I set the field "Select users to issue certificate to" to "User 11"
     And I click on "Save" "button" in the "Issue certificates" "dialogue"
     And the following should exist in the "reportbuilder-table" table:
-      | First name / Surname | Date issued         |
-      | User 11              | ##today##%d %B %Y## |
+      | First name | Date issued         |
+      | User 11    | ##today##%d %B %Y## |
     # Issue second certificate to another user.
     And I click on "Issue certificates" "link"
     And I set the field "Select users to issue certificate to" to "User 12"
     And I click on "Save" "button" in the "Issue certificates" "dialogue"
     And the following should exist in the "reportbuilder-table" table:
-      | First name / Surname | Date issued         |
-      | User 11              | ##today##%d %B %Y## |
-      | User 12              | ##today##%d %B %Y## |
+      | First name | Date issued         |
+      | User 11    | ##today##%d %B %Y## |
+      | User 12    | ##today##%d %B %Y## |
     And I log out
 
   Scenario: Issue a certificate with expiry date as issuer user
@@ -102,9 +102,9 @@ Feature: Being able to manually issue a certificate to a user
     And I follow "Certificate 0"
     Then "User 11" "text" should exist in the "reportbuilder-table" "table"
     And the following should exist in the "reportbuilder-table" table:
-      | First name / Surname | Expiry date            |
-      | User 11              | ##tomorrow##%d %B %Y## |
-      | User 12              | ##tomorrow##%d %B %Y## |
+      | First name | Expiry date            |
+      | User 11    | ##tomorrow##%d %B %Y## |
+      | User 12    | ##tomorrow##%d %B %Y## |
     And I log out
 
   Scenario: Revoke issued certificate as issuer user
