@@ -1,6 +1,6 @@
 # Changelog
 
-## Unreleased
+## 4.4.2 - 2024-08-13
 ### Fixed
 - Failing behat tests because of incorrect table headers
 
