@@ -1,5 +1,9 @@
 # Changelog
 
+## 4.4.3 - 2024-09-03
+### Changed
+- Only changes to automatic testing scripts
+
 ## 4.4.2 - 2024-08-13
 ### Fixed
 - Failing behat tests because of incorrect table headers
