@@ -38,6 +38,7 @@ final class template_test extends advanced_testcase {
      * Test set up.
      */
     public function setUp(): void {
+        parent::setUp();
         $this->resetAfterTest();
         $this->certgenerator = self::getDataGenerator()->get_plugin_generator('tool_certificate');
     }
