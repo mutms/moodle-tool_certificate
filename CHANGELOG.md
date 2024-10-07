@@ -1,5 +1,9 @@
 # Changelog
 
+## Unreleased
+### Fixed
+- Fixed memory leak when generating a lot of certificates
+
 ## 4.4.3 - 2024-09-03
 ### Changed
 - Only changes to automatic testing scripts

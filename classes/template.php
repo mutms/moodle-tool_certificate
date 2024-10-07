@@ -295,7 +295,10 @@ class template {
             force_current_language($currentlang);
 
             if ($return) {
-                return $pdf->Output('', 'S');
+                $output = $pdf->Output('', 'S');
+                // Destroys the created pdf object upon return to avoid memory exhaustion.
+                $pdf->_destroy(true);
+                return $output;
             }
             if (defined('PHPUNIT_TEST') && PHPUNIT_TEST) {
                 // For some reason phpunit on travis-ci.com do not return 'cli' on php_sapi_name().
