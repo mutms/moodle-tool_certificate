@@ -1,6 +1,8 @@
 # Changelog
 
 ## Unreleased
+### Added
+- Compatibility with Moodle 4.5; Updates to version testing matrices
 ### Fixed
 - Fixed memory leak when generating a lot of certificates
 
