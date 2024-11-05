@@ -1,6 +1,6 @@
 # Changelog
 
-## Unreleased
+## 4.5 - 2024-11-05
 ### Fixed
 - Replaced icons that are no longer correct in Moodle 4.5 leaving compatibility with previous versions
 
