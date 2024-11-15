@@ -736,8 +736,10 @@ class template {
 
         return $issue->id;
     }
+
     /**
-     * Creates stored file for an issue.
+     * Creates stored file for an issue, if the file already exists and $regenerate is false,
+     * we return the existing file.
      *
      * @param \stdClass $issue
      * @param bool $regenerate
@@ -762,6 +764,8 @@ class template {
             $file->filename);
         if ($storedfile && $regenerate) {
             $storedfile->delete();
+        } else if ($storedfile && !$regenerate) {
+            return $storedfile;
         }
 
         return $fs->create_file_from_string($file, $filecontents);
