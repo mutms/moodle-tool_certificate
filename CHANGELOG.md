@@ -1,5 +1,9 @@
 # Changelog
 
+## 4.5.1 - 2024-12-10
+### Fixed
+- issuing scheduled task throws exception on already created file under a race condition
+
 ## 4.5 - 2024-11-05
 ### Fixed
 - Replaced icons that are no longer correct in Moodle 4.5 leaving compatibility with previous versions
