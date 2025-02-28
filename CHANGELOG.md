@@ -1,5 +1,9 @@
 # Changelog
 
+## Unreleased
+### Fixed
+- behat tests checking that certificate opens in a new window failing with selenium/standalone-chrome:4
+
 ## 4.5.1 - 2024-12-10
 ### Fixed
 - issuing scheduled task throws exception on already created file under a race condition
