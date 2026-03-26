@@ -294,7 +294,7 @@ class issue_handler extends handler {
     /**
      * For use in unittests
      */
-    public static function reset_caches() {
+    public static function reset_caches(): void {
         self::$singleton = null;
     }
 }
